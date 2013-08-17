@@ -94,14 +94,14 @@ Functions
 | ``is_granted(role, object = null, field = null)``  | This will return ``true`` if the current user has the required role, more                  |
 |                                                    | information in ":ref:`book-security-template`"                                             |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``logout_path(key)``                               | This will generate the relative logout URL for the given firewall                          |
+| ``logout_path(key)``                               | 这个方法会通过所给的防火墙配置来生成的注销URL(相对路径)                                    |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``logout_url(key)``                                | Equal to ``logout_path(...)`` but this will generate an absolute url                       |
+| ``logout_url(key)``                                | 和``logout_path(...)``一样的方法,但是生成的是绝对路径的URL                                 |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``path(name, parameters = {})``                    | Get a relative url for the given route, more information in                                |
-|                                                    | ":ref:`book-templating-pages`".                                                            |
+| ``path(name, parameters = {})``                    | 通过所给路由来获得一个相对路径的URL,                                                       |
+|                                                    | 更多信息请看 ":ref:`book-templating-pages`".                                               |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``url(name, parameters = {})``                     | Equal to ``path(...)`` but it generates an absolute url                                    |
+| ``url(name, parameters = {})``                     | 和``path(...)``一样,但是生成的是绝对路径的url                                              |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 
 Filters

@@ -5,7 +5,7 @@ Symfony2 Twig 扩展
 ========================
 
 Twig是Symfony2默认的模板引擎.单独来看,Tiwg已经包含了大量的内建函数,过滤器,标记跟测试(`http://twig.sensiolabs.org/documentation`_
-then scroll to the bottom)
+滚动到页面底部可以看到参考列表)
 
 Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig模板中.
 下面是关于所有定制函数,过滤器,标记和测试的信息,当你使用Symfony2
@@ -15,10 +15,6 @@ Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig
 
 方法
 ---------
-
-.. versionadded:: 2.2
-    The ``render`` and ``controller`` functions are new in Symfony 2.2. Prior,
-    the ``{% render %}`` tag was used and had a different signature.
 
 .. 当前版本新增的:: 2.2
     ``render`` 跟 ``controller``的方法是在在2.2才新增的,
@@ -80,8 +76,8 @@ Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig
 | ``csrf_token(intention)``                          | 这个方法会渲染一个csrf标记. 使用这个方法如果你想csrf保护但并不用自己再去创建一个csrf的表单 |
 |                                                    |                                                                                            |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``is_granted(role, object = null, field = null)``  | This will return ``true`` if the current user has the required role, more                  |
-|                                                    | information in ":ref:`book-security-template`"                                             |
+| ``is_granted(role, object = null, field = null)``  | 如果当前用户是所要求的角色(role) 则会返回 true,                                            |
+|                                                    | 更多信息请看 ":ref:`book-security-template`"                                               |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | ``logout_path(key)``                               | 这个方法会通过所给的防火墙配置来生成的注销URL(相对路径)                                    |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+

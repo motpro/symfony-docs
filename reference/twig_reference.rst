@@ -98,31 +98,28 @@ Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig
 | ``text|humanize``                                                               | 让专业术语变成大众可读懂的词语                                    |
 |                                                                                 | ( 用空格替换下划线,并用印刷体用的大写处理字符串)                  |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``text|trans(arguments = {}, domain = 'messages', locale = null)``              | This will translate the text into the current language, more      |
-|                                                                                 | information in .                                                  |
-|                                                                                 | :ref:`Translation Filters<book-translation-filters>`.             |
+| ``text|trans(arguments = {}, domain = 'messages', locale = null)``              | 这个方法可以把文本翻译为当前语言                                  |
+|                                                                                 | 详细信息见:ref:`Translation Filters<book-translation-filters>`.   |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``text|transchoice(count, arguments = {}, domain = 'messages', locale = null)`` | This will translate the text with pluralization, more information |
-|                                                                                 | in :ref:`Translation Filters<book-translation-filters>`.          |
+| ``text|transchoice(count, arguments = {}, domain = 'messages', locale = null)`` | 用多元化来翻译文本                                                |
+|                                                                                 | 详细信息见 :ref:`Translation Filters<book-translation-filters>`.  |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``variable|yaml_encode(inline = 0)``                                            | This will transform the variable text into a YAML syntax.         |
+| ``variable|yaml_encode(inline = 0)``                                            | 这个方法会转换变量文本到yaml语法格式                              |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``variable|yaml_dump``                                                          | This will render a yaml syntax with their type.                   |
+| ``variable|yaml_dump``                                                          | 这个通过它们自己的数据类型渲染为yaml语法格式                      |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``classname|abbr_class``                                                        | This will render an ``abbr`` element with the short name of a     |
-|                                                                                 | PHP class.                                                        |
+| ``classname|abbr_class``                                                        | 这个方法会通过一个PHP类的缩写渲染一个``abbr``元素                 |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``methodname|abbr_method``                                                      | This will render a PHP method inside a ``abbr`` element           |
-|                                                                                 | (e.g. ``Symfony\Component\HttpFoundation\Response::getContent``   |
+| ``methodname|abbr_method``                                                      | 这个方法会在一个``abbr``内部渲染一个PHP方法                       |
+|                                                                                 | (例子 ``Symfony\Component\HttpFoundation\Response::getContent``)  |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``arguments|format_args``                                                       | This will render a string with the arguments of a function and    |
-|                                                                                 | their types.                                                      |
+| ``arguments|format_args``                                                       | 这个方法会通过所给的方法的参数和它的类型来渲染一个字符串          |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``arguments|format_args_as_text``                                               | Equal to ``[...]|format_args``, but it strips the tags.           |
+| ``arguments|format_args_as_text``                                               | 和 ``[...]|format_args``一样, 但是去掉了标记.                     |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``path|file_excerpt(line)``                                                     | This will render an excerpt of a code file around the given line. |
+| ``path|file_excerpt(line)``                                                     | 这个会渲染一个围绕上下文的代码文件的引用.                         |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| ``path|format_file(line, text = null)``                                         | This will render a file path in a link.                           |
+| ``path|format_file(line, text = null)``                                         | 这个方法会渲染文件路径到一个链接中.                               |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
 | ``exceptionMessage|format_file_from_text``                                      | Equal to ``format_file`` except it parsed the default PHP error   |
 |                                                                                 | string into a file path (i.e. 'in foo.php on line 45')            |

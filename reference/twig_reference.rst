@@ -4,7 +4,7 @@
 Symfony2 Twig 扩展
 ========================
 
-Twig是Symfony2默认的模板引擎.单独来看,Tiwg已经包含了大量的内建函数,过滤器,标记跟测试(`http://twig.sensiolabs.org/documentation`_
+Twig是Symfony2默认的模板引擎.单独来看,Twig已经包含了大量的内建函数,过滤器,标记跟测试(`http://twig.sensiolabs.org/documentation`_
 滚动到页面底部可以看到参考列表)
 
 Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig模板中.

@@ -185,11 +185,12 @@ Global Variables
 | ``app.security``                                      | instance of :class:`Symfony\\Bundle\\FrameworkBundle\\Templating\\GlobalVariables` |
 +-------------------------------------------------------+------------------------------------------------------------------------------------+
 
-Symfony Standard Edition Extensions
+Symfony标准版扩展
 -----------------------------------
 
-The Symfony Standard Edition adds some bundles to the Symfony2 Core Framework.
-Those bundles can have other Twig extensions:
+Symfony标准版增添了一些bundle到Symfony2的核心框架
+
+这些bundle可以有其它Twig扩展:
 
 * **Twig Extension** includes all extensions that do not belong to the
   Twig core but can be interesting. You can read more in 

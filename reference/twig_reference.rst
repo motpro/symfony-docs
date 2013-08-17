@@ -21,7 +21,7 @@ Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig
      在这里``{% render %}`` 标记被使用而且有个不同的特征.
 
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| 函数语法                                           | Usage                                                                                      |
+| 函数语法                                           | 使用说明                                                                                   |
 +====================================================+============================================================================================+
 | ``render(uri, options = {})``                      | 这个方法会通过所给的控制器或者URL来渲染一个片段                                            |
 | ``render(controller('B:C:a', {params}))``          | 要知道更多详细信息, 请看 :ref:`templating-embedding-controller`.                           |
@@ -93,7 +93,7 @@ Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig
 -------
 
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
-| Filter Syntax                                                                   | Usage                                                             |
+| 过滤器语法                                                                      | 使用说明                                                          |
 +=================================================================================+===================================================================+
 | ``text|humanize``                                                               | Makes a technical name human readable (replaces underscores by    |
 |                                                                                 | spaces and capitalizes the string)                                |
@@ -130,7 +130,7 @@ Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig
 | ``path|file_link(line)``                                                        | This will render a path to the correct file (and line number)     |
 +---------------------------------------------------------------------------------+-------------------------------------------------------------------+
 
-Tags
+标签
 ----
 
 +---------------------------------------------------+--------------------------------------------------------------------+
@@ -150,7 +150,7 @@ Tags
 |                                                   | current template                                                   |
 +---------------------------------------------------+--------------------------------------------------------------------+
 
-Tests
+测试
 -----
 
 +---------------------------------------------------+------------------------------------------------------------------------------+
@@ -159,15 +159,15 @@ Tests
 | ``selectedchoice(choice, selectedValue)``         | This will return ``true`` if the choice is selected for the given form value |
 +---------------------------------------------------+------------------------------------------------------------------------------+
 
-Global Variables
+全局变量
 ----------------
 
 +-------------------------------------------------------+------------------------------------------------------------------------------------+
 | Variable                                              | Usage                                                                              |
 +=======================================================+====================================================================================+
-| ``app`` *Attributes*: ``app.user``, ``app.request``   | The ``app`` variable is available everywhere, and gives you quick                  |
-| ``app.session``, ``app.environment``, ``app.debug``   | access to many commonly needed objects. The ``app`` variable is                    |
-| ``app.security``                                      | instance of :class:`Symfony\\Bundle\\FrameworkBundle\\Templating\\GlobalVariables` |
+| ``app`` *Attributes*: ``app.user``, ``app.request``   | ``app`` 随处可用, 这个可以让你很快的使用到大量通用的需要的对象.                    |
+| ``app.session``, ``app.environment``, ``app.debug``   | ``app`` 变量是这个类的实例                                                         |
+| ``app.security``                                      | class:`Symfony\\Bundle\\FrameworkBundle\\Templating\\GlobalVariables`              |
 +-------------------------------------------------------+------------------------------------------------------------------------------------+
 
 Symfony标准版扩展
@@ -177,13 +177,12 @@ Symfony标准版增添了一些bundle到Symfony2的核心框架
 
 这些bundle可以有其它Twig扩展:
 
-* **Twig Extension** includes all extensions that do not belong to the
-  Twig core but can be interesting. You can read more in 
-  `the official Twig Extensions documentation`_
-* **Assetic** adds the ``{% stylesheets %}``, ``{% javascripts %}`` and 
-  ``{% image %}`` tags. You can read more about them in 
+* **Twig Extension** 包含所有不属于Twig核心的但是会很有意思的扩展, 
+  你可以通过这个了解更多 `the official Twig Extensions documentation`_
+* **Assetic** 增加了 ``{% stylesheets %}``, ``{% javascripts %}`` 和 
+  ``{% image %}`` 标签. 你可以通过这个了解更多关于这些标签 
   :doc:`the Assetic Documentation</cookbook/assetic/asset_management>`;
-* **Translation** translated by mot . Weibo `http://weibo.com/mot99/` 2013-08-17
+* **Translation** mot翻译 . Weibo `http://weibo.com/mot99/` 2013-08-17
 
 .. _`the official Twig Extensions documentation`: http://twig.sensiolabs.org/doc/extensions/index.html
 .. _`http://twig.sensiolabs.org/documentation`: http://twig.sensiolabs.org/documentation

@@ -38,29 +38,29 @@ Functions
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | 函数语法                                           | Usage                                                                                      |
 +====================================================+============================================================================================+
-| ``render(uri, options = {})``                      | This will render the fragment for the given controller or URL                              |
-| ``render(controller('B:C:a', {params}))``          | For more information, see :ref:`templating-embedding-controller`.                          |
+| ``render(uri, options = {})``                      | 这个方法会通过所给的控制器或者URL来渲染一个片段                                            |
+| ``render(controller('B:C:a', {params}))``          | 要知道更多详细信息, 请看 :ref:`templating-embedding-controller`.                           |
 | ``render(path('route', {params}))``                |                                                                                            |
 | ``render(url('route', {params}))``                 |                                                                                            |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``render_esi(controller('B:C:a', {params}))``      | This will generates an ESI tag when possible or fallback to the ``render``                 |
-| ``render_esi(url('route', {params}))``             | behavior otherwise. For more information, see :ref:`templating-embedding-controller`.      |
+| ``render_esi(controller('B:C:a', {params}))``      | 如果可以,这个方法会生成一个ESI标签 否则就退回到``Render渲染``行为                          |
+| ``render_esi(url('route', {params}))``             | 要知道更多详细信息, 请看 :ref:`templating-embedding-controller`.                           |
 | ``render_esi(path('route', {params}))``            |                                                                                            |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``render_hinclude(controller(...))``               | This will generates an Hinclude tag for the given controller or URL.                       |
-| ``render_hinclude(url('route', {params}))``        | For more information, see :ref:`templating-embedding-controller`.                          |
+| ``render_hinclude(controller(...))``               | 这个方法会通过所给的控制器或者URL来生成一个包含标签                                        |
+| ``render_hinclude(url('route', {params}))``        | 要知道更多详细信息, 请看 :ref:`templating-embedding-controller`.                           |
 | ``render_hinclude(path('route', {params}))``       |                                                                                            |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``controller(attributes = {}, query = {})``        | Used along with the ``render`` tag to refer to the controller that you want to render.     |
+| ``controller(attributes = {}, query = {})``        | 单独使用Render标签来提交到你想渲染的控制                                                   |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``asset(path, packageName = null)``                | Get the public path of the asset, more information in                                      |
-|                                                    | ":ref:`book-templating-assets`".                                                           |
+| ``asset(path, packageName = null)``                | 获得assets文件(js,css,image)的公开路径                                                     |
+|                                                    | 要知道更多详细信息, 请看 ":ref:`book-templating-assets`".                                  |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``asset_version(packageName = null)``              | Get the current version of the package, more information in                                |
-|                                                    | ":ref:`book-templating-assets`".                                                           |
+| ``asset_version(packageName = null)``              | 获得包当前的版本                                                                           |
+|                                                    | 要知道更多详细信息, 请看 ":ref:`book-templating-assets`".                                  |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``form(view, variables = {})``                     | This will render the HTML of a complete form, more information in                          |
-|                                                    | in :ref:`the Twig Form reference<reference-forms-twig-form>`.                              |
+| ``form(view, variables = {})``                     | 这个方法会渲染出一个完整表单的HTML代码,                                                    |
+|                                                    | 更多相关信息在 :ref:`the Twig Form reference<reference-forms-twig-form>`.                  |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | ``form_start(view, variables = {})``               | This will render the HTML start tag of a form, more information in                         |
 |                                                    | in :ref:`the Twig Form reference<reference-forms-twig-start>`.                             |

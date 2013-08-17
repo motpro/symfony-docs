@@ -60,7 +60,7 @@ Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | ``form_enctype(view)``                             | 如果表单有 file 上传的input标签这个方法会渲染出必须的属性``enctype="multipart/form-data"``,|
 |                                                    |                                                                                            |
-|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-enctype>`.                           |
+|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-enctype>`.                 |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | ``form_widget(view, variables = {})``              | 这个方法会渲染出一个完整的表单或者一个特别的field的widget部件                              |
 |                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-widget>`.                  |
@@ -69,7 +69,7 @@ Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig
 |                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-errors>`.                  |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | ``form_label(view, label = null, variables = {})`` | 这个方法会渲染出表单字段的label标签                                                        |
-|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-label>`.                                |
+|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-label>`.                   |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | ``form_row(view, variables = {})``                 | This will render the row (the field's label, errors and widget) of the                     |
 |                                                    | given field, 更多信息请看 in :ref:`the Twig Form reference<reference-forms-twig-row>`.     |

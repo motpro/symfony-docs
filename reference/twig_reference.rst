@@ -198,7 +198,8 @@ Symfony标准版增添了一些bundle到Symfony2的核心框架
 * **Assetic** adds the ``{% stylesheets %}``, ``{% javascripts %}`` and 
   ``{% image %}`` tags. You can read more about them in 
   :doc:`the Assetic Documentation</cookbook/assetic/asset_management>`;
+* **Translation** translated by mot . Weibo `http://weibo.com/mot99/` 2013-08-17
 
 .. _`the official Twig Extensions documentation`: http://twig.sensiolabs.org/doc/extensions/index.html
 .. _`http://twig.sensiolabs.org/documentation`: http://twig.sensiolabs.org/documentation
-.. _translated by mot . Weibo `http://weibo.com/mot99/` 2013-08-17
+

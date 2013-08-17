@@ -195,3 +195,4 @@ Those bundles can have other Twig extensions:
 
 .. _`the official Twig Extensions documentation`: http://twig.sensiolabs.org/doc/extensions/index.html
 .. _`http://twig.sensiolabs.org/documentation`: http://twig.sensiolabs.org/documentation
+.. _translated by mot . Weibo `http://weibo.com/mot99/` 2013-08-17

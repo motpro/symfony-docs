@@ -7,25 +7,30 @@ Symfony2 Twig 扩展
 Twig is the default template engine for Symfony2. By itself, it already contains
 a lot of build-in functions, filters, tags and tests (`http://twig.sensiolabs.org/documentation`_
 then scroll to the bottom).
-.. Twig是Symfony2默认的模板引擎.单独来看,Tiwg已经包含了大量的内建函数,过滤器,标记跟测试(`http://twig.sensiolabs.org/documentation`_
+
+Twig是Symfony2默认的模板引擎.单独来看,Tiwg已经包含了大量的内建函数,过滤器,标记跟测试(`http://twig.sensiolabs.org/documentation`_
 then scroll to the bottom)
 
 Symfony2 adds more custom extension on top of Twig to integrate some components
 into the Twig templates. Below is information about all the custom functions,
 filters, tags and tests that are added when using the Symfony2 Core Framework.
-.. Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig模板中.下面是关于所有定制函数,过滤器,标记和测试的信息,当你使用Symfony2
+
+Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig模板中.下面是关于所有定制函数,过滤器,标记和测试的信息,当你使用Symfony2
 核心框架的时候就被加进Twig了.
 
 There may also be tags in bundles you use that aren't listed here.
-.. 可能也会有一些你在bundle中使用的标签,在这里没有被列举出来.
+
+可能也会有一些你在bundle中使用的标签,在这里没有被列举出来.
 
 Functions
+
 函数
 ---------
 
 .. versionadded:: 2.2
     The ``render`` and ``controller`` functions are new in Symfony 2.2. Prior,
     the ``{% render %}`` tag was used and had a different signature.
+
 .. 当前版本新增的:: 2.2
     ``render`` 跟 ``controller``的方法是在在2.2才新增的,
      ``{% render %}`` 标记被使用而且有个不同的特征.

@@ -4,27 +4,16 @@
 Symfony2 Twig 扩展
 ========================
 
-Twig is the default template engine for Symfony2. By itself, it already contains
-a lot of build-in functions, filters, tags and tests (`http://twig.sensiolabs.org/documentation`_
-then scroll to the bottom).
-
 Twig是Symfony2默认的模板引擎.单独来看,Tiwg已经包含了大量的内建函数,过滤器,标记跟测试(`http://twig.sensiolabs.org/documentation`_
 then scroll to the bottom)
 
-Symfony2 adds more custom extension on top of Twig to integrate some components
-into the Twig templates. Below is information about all the custom functions,
-filters, tags and tests that are added when using the Symfony2 Core Framework.
-
-Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig模板中.下面是关于所有定制函数,过滤器,标记和测试的信息,当你使用Symfony2
+Symfony2增加了很多定制的扩展在Twig上,以此合并一些组件到Twig模板中.
+下面是关于所有定制函数,过滤器,标记和测试的信息,当你使用Symfony2
 核心框架的时候就被加进Twig了.
-
-There may also be tags in bundles you use that aren't listed here.
 
 可能也会有一些你在bundle中使用的标签,在这里没有被列举出来.
 
-Functions
-
-函数
+方法
 ---------
 
 .. versionadded:: 2.2
@@ -33,7 +22,7 @@ Functions
 
 .. 当前版本新增的:: 2.2
     ``render`` 跟 ``controller``的方法是在在2.2才新增的,
-     ``{% render %}`` 标记被使用而且有个不同的特征.
+     在这里``{% render %}`` 标记被使用而且有个不同的特征.
 
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | 函数语法                                           | Usage                                                                                      |
@@ -62,34 +51,34 @@ Functions
 | ``form(view, variables = {})``                     | 这个方法会渲染出一个完整表单的HTML代码,                                                    |
 |                                                    | 更多相关信息在 :ref:`the Twig Form reference<reference-forms-twig-form>`.                  |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``form_start(view, variables = {})``               | This will render the HTML start tag of a form, more information in                         |
+| ``form_start(view, variables = {})``               | 渲染一个form表单开始的HTML代码, more information in                                        |
 |                                                    | in :ref:`the Twig Form reference<reference-forms-twig-start>`.                             |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``form_end(view, variables = {})``                 | This will render the HTML end tag of a form together with all fields that                  |
-|                                                    | have not been rendered yet, more information                                               |
-|                                                    | in :ref:`the Twig Form reference<reference-forms-twig-end>`.                               |
+| ``form_end(view, variables = {})``                 | 渲染一个form表单结束的HTML代码,连同所有的并没有没有渲染的字段                              |
+|                                                    |                                                                                            |
+|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-end>`.                     |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``form_enctype(view)``                             | This will render the required ``enctype="multipart/form-data"`` attribute                  |
-|                                                    | if the form contains at least one file upload field, more information in                   |
-|                                                    | in :ref:`the Twig Form reference<reference-forms-twig-enctype>`.                           |
+| ``form_enctype(view)``                             | 如果表单有 file 上传的input标签这个方法会渲染出必须的属性``enctype="multipart/form-data"``,|
+|                                                    |                                                                                            |
+|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-enctype>`.                           |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``form_widget(view, variables = {})``              | This will render a complete form or a specific HTML widget of a field,                     |
-|                                                    | more information in :ref:`the Twig Form reference<reference-forms-twig-widget>`.           |
+| ``form_widget(view, variables = {})``              | 这个方法会渲染出一个完整的表单或者一个特别的field的widget部件                              |
+|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-widget>`.                  |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``form_errors(view)``                              | This will render any errors for the given field or the "global" errors,                    |
-|                                                    | more information in :ref:`the Twig Form reference<reference-forms-twig-errors>`.           |
+| ``form_errors(view)``                              | 这个方法会渲染出所给表单字段的错误信息或者全局的错误信息                                   |
+|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-errors>`.                  |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``form_label(view, label = null, variables = {})`` | This will render the label for the given field, more information in                        |
-|                                                    | :ref:`the Twig Form reference<reference-forms-twig-label>`.                                |
+| ``form_label(view, label = null, variables = {})`` | 这个方法会渲染出表单字段的label标签                                                        |
+|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-label>`.                                |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | ``form_row(view, variables = {})``                 | This will render the row (the field's label, errors and widget) of the                     |
-|                                                    | given field, more information in :ref:`the Twig Form reference<reference-forms-twig-row>`. |
+|                                                    | given field, 更多信息请看 in :ref:`the Twig Form reference<reference-forms-twig-row>`.     |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``form_rest(view, variables = {})``                | This will render all fields that have not yet been rendered, more                          |
-|                                                    | information in :ref:`the Twig Form reference<reference-forms-twig-rest>`.                  |
+| ``form_rest(view, variables = {})``                | This will render all fields that have not yet been rendered,                               |
+|                                                    | 更多信息请看 :ref:`the Twig Form reference<reference-forms-twig-rest>`.                    |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
-| ``csrf_token(intention)``                          | This will render a CSRF token. Use this function if you want CSRF protection without       |
-|                                                    | creating a form                                                                            |
+| ``csrf_token(intention)``                          | 这个方法会渲染一个csrf标记. 使用这个方法如果你想csrf保护但并不用自己再去创建一个csrf的表单 |
+|                                                    |                                                                                            |
 +----------------------------------------------------+--------------------------------------------------------------------------------------------+
 | ``is_granted(role, object = null, field = null)``  | This will return ``true`` if the current user has the required role, more                  |
 |                                                    | information in ":ref:`book-security-template`"                                             |
